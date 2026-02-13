@@ -4,7 +4,7 @@ A simple, self-contained Windows application for solving Bitcoin address puzzles
 
 ## 🚀 Quick Start
 
-1. **Download** `ScratchOff.exe` from [Releases](https://github.com/yourusername/scratch-off-client/releases)
+1. **Download** `ScratchOff.exe` from [Releases](https://github.com/the0rchid/scratch-off-client/releases)
 2. **Run** it: just double-click!
 3. **(Optional)** Enter your Bitcoin address to claim credit if we solve the puzzle
 4. **Minimize** and let it run in the background
@@ -54,7 +54,7 @@ If you want the setup script:
 
 - **[README.md](README.md)** – User guide for the application
 - **[DISTRIBUTION-GUIDE.md](DISTRIBUTION-GUIDE.md)** – How to share with friends
-- **[SECURITY.md](/../SECURITY.md)** – Security audit
+- **[SECURITY.md](SECURITY.md)** – Security audit
 
 ## 🤝 Contributing
 
@@ -84,4 +84,4 @@ A: Yes! This is a puzzle-solving challenge. No laws are broken.
 ---
 
 **Latest Release**: v1.0.0 (Golden Ticket Icon Edition)  
-**Download**: [Latest Release](https://github.com/yourusername/scratch-off-client/releases/latest)
+**Download**: [Latest Release](https://github.com/the0rchid/scratch-off-client/releases/latest)
