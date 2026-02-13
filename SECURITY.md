@@ -109,36 +109,6 @@ The application is safe to distribute to friends and can be run on personal comp
 
 ---
 
-## Known Limitations & Recommendations
-
-### ⚠️ **Client HTTPS Validation**
-- **Finding**: Client uses requests library which validates HTTPS by default
-- **Risk**: If user manually disables SSL verification (not recommended), MITM attack possible
-- **Mitigation**: Documentation clearly states to use official HTTPS URLs only
-- **Status**: LOW - Only if user explicitly bypasses security
-
-### ⚠️ **No Rate Limiting on Ticket Endpoint**
-- **Finding**: `/ticket` endpoint has no rate limiting
-- **Risk**: Malicious client could spam requests to exhaust resources
-- **Mitigation**: Can be added via middleware (slowhttpserver, etc.)
-- **Status**: LOW - Not a critical threat; DoS can be mitigated at infrastructure level
-- **Recommendation**: Add `slowhttpserver` middleware if distributing to untrusted parties
-
-### ⚠️ **Worker ID Information Leakage**
-- **Finding**: Worker IDs appear in logs/dashboard (hostname-pid by default)
-- **Risk**: User's hostname might reveal information
-- **Mitigation**: Users can customize Worker ID to anonymous value
-- **Status**: LOW - Optional, user-controlled
-- **Recommendation**: Suggest users set Worker ID to "anon" if privacy-conscious
-
-### ⚠️ **CORS Policy Not Explicitly Set**
-- **Finding**: No explicit CORS headers defined
-- **Risk**: Browser may block cross-origin requests from other domains
-- **Status**: LOW - Not a security issue, expected for internal APIs
-- **Recommendation**: Browser requests are blocked; only direct HTTP clients work (expected)
-
----
-
 ## Deployment Checklist
 
 Before production deployment:
